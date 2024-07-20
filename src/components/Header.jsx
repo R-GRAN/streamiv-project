@@ -2,14 +2,16 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const menu = [
-    { name: "à l'affiche", url: "/fresh" },
-    { name: "animation", url: "/animations" },
-    { name: "documentaire", url: "/docs" },
-    { name: "spectacle", url: "/shows" },
+    { name: "Action", url: "28" },
+    { name: "animation", url: "16" },
+    { name: "Science-Fiction", url: "878" },
+    { name: "Fantastique", url: "14" },
   ];
   return (
-    <header className="flex bg-gray-700 p-2 w-full justify-center">
-      <h1 className="text-green-600 content-center px-4">STREAMIV</h1>
+    <header className="flex bg-zinc-700 p-2 w-full justify-center">
+        <Link className="text-green-600 text-3xl content-center px-4" to={"/"}>
+      <h1 >STREAMIV</h1>
+        </Link>
       <nav>
         <ul className=" flex text-white">
           {menu.map((item, index) => (
